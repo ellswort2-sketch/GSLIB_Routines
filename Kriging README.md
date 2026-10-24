@@ -71,10 +71,8 @@ Original Stanford GSLIB copyright/license is retained in the HTML, source, and L
 
 ## Source alignment update (version 1.1)
 
-The first delivery used exp(−3(h/a)²) for Gaussian, whereas this supplied COVA3 uses exp(−9(h/a)²). Version 1.1 corrects the Gaussian formula, the power covariance offset in nested models, covariance coincidence distance, octant coordinate-plane boundaries and validation ordering, missing-Z fallback, and target secondary trimming. Recalculate any earlier Gaussian or nested-power estimates. Spherical and exponential formulas are unchanged.
-
 Required GSLIB routines: COVA3, SETROT, SETSUPR, PICKSUP (file PICKSUPR.F), SRCHSUPR, KTSOL, CHKNAM, SQDIST, SORTEM, GETINDX. READPARM, KT3D, and MAKEPAR are already defined in KT3D.F. No additional nonintrinsic library calls were found in those ten routines.
 
 For the Gaussian formula shown in other references: exp(−h²/b²), exp(−3h²/c²), and this COVA3's exp(−9h²/a²) describe the same family when a = 3b = √3c. The numerical range parameter must be converted; using the same number in all three formulas changes the spatial model.
 
-Fresh Fortran verification uses gfortran with `-std=legacy -ffixed-line-length-none -fallow-argument-mismatch`. Only output formats are widened for comparison. The verification scripts/report are in verification/. The compiler and executable are not needed to use the page.
+
