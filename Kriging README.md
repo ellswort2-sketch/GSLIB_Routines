@@ -1,7 +1,5 @@
 # Field Kriging — KT3D browser adaptation
 
-Upload **Kriging_KT3D.html** to the root of your existing GSLIB_Routines GitHub repository. Keep that filename. Open it from GitHub Pages with `/Kriging_KT3D.html` appended to your existing Pages address. The HTML is self-contained: no libraries, installation, API keys, or server are needed. It also runs when opened locally in a current browser. The README stays Markdown; it does not need conversion to HTML.
-
 ## Quick start for soil or yield data
 
 1. Save a normal table as CSV UTF-8. Row 1 contains column names; later rows contain observations. GEO-EAS is also accepted using its title/count/name-lines/whitespace format, illustrated in the page.
